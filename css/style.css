@@ -1,32 +1,60 @@
-html{
-    max-width: 100%;
+:root{
+    --african-violet: #AD80A3ff;
+    --iris: #454DC4ff;
+    --iris-2: #674FBBff;
+    --light-red: #FB8F8Fff;
+    --salmon: #F38274ff;
+    --tickle-me-pink: #FD8FB3ff;
+    --eminence: #6F4180ff;
+    --atomic-tangerine: #FDA57Eff;
 }
+
+html{
+    width: 100%;
+}
+
 body{
-    background-color: #cec263;
     font-family: 'Helvetica', sans-serif;
     color: white;
 }
 
+#stars{
+    background-color: var(--iris);
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:-1; 
+}
 
-#namePlate{
+#name-plate{
     font-family: 'Cedarville Cursive', cursive;
-    font-size: 300%;
+    font-size: 4rem;
     margin: 0;
 }
+
 #main{
-    margin-top: 10%;
-    margin-bottom: 5%;
+    padding: 0 10rem;
 }
 
-#profilePicture{
+#profile-picture{
     width: 85%;
-    border-radius: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
+#bio,
+#bio-desc{
+    display: inline-block;
+    background-color: var(--iris);
+    padding: .5rem;
+}
+
 .icon{
-    width: 150%;
-    fill: #663847;
+    height: 2.5rem;
+    filter:  brightness(0) invert(1);
+}
+
+.social-icon-container > :not(:first-child){
+    padding-left: 2rem;
 }
