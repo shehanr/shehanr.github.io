@@ -4,16 +4,12 @@ var ctx = canvas.getContext("2d");
 var W = window.innerWidth;
 var H = window.innerHeight;
 
-//Set Canvas and Background Color;
-canvas.width = W;
-canvas.height = H;
-ctx.fillStyle = "transparent";
-ctx.fillRect(0, 0, W, H);
+setSize(canvas, ctx, W, H);
 
 //Glow effect;
 ctx.shadowBlur = 10;
 ctx.shadowColor = "#ddd";
-var animateSpeed = 1;
+var animateSpeed = 2;
 function animate() {
     // Random position and size
     let x = W * Math.random();
@@ -27,7 +23,24 @@ function animate() {
     ctx.fill();
     
     //Slow animate speed
-    animateSpeed = animateSpeed * 1.01;
+    animateSpeed = animateSpeed * 1.005;
     setTimeout(animate, animateSpeed);
 }
 animate();
+
+
+function setSize(){
+    W = window.innerWidth;
+    H = window.innerHeight;
+
+    canvas.width = W;
+    canvas.height = H;
+    ctx.fillStyle = "transparent";
+    ctx.fillRect(0, 0, W, H);
+}
+
+$(window).resize(function(){
+    setSize();
+    // when resizing, we can speed up the show
+    animateSpeed = 1.5;
+});

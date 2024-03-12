@@ -9,12 +9,13 @@
     --atomic-tangerine: #FDA57Eff;
 }
 
-html{
+html, body{
     width: 100%;
+    height: 100%
 }
 
 body{
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: white;
 }
 
@@ -32,6 +33,7 @@ body{
 }
 
 #main{
+    height: 100%;
     padding: 0 10rem;
 }
 
