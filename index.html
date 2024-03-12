@@ -1,49 +1,64 @@
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/style.css"/>
+<!DOCTYPE html>
+<
 
-<script src="scripts/bootstrap.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-<link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive" rel="stylesheet">
+
+
 <html>
     <head>
-        <title>Shehan Rajapakse</title>
+        <title>Shehan Rajapakse - Software Engineer</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Shehan Rajapakse, a full-stack software engineer specializing in .NET, develops web apps for diverse clients and organizations in the consulting field.">
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="author" href="https://github.com/shehanr" />
+        <link rel="canonical" href="https://shehanr.github.io" />
+        <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css"/>
+        <script src="scripts/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     </head>
     <body>
-        <canvas id="stars"></canvas>        
-        <div class="container-fluid" id="main">
-            <div class="row h-100">
-                <div class="col-8 my-auto">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h1 id="name-plate" class="pb-2">Shehan Rajapakse</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h4 class="pb-1"><span id="bio">Software Developer</span></h4>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p class="pb-1">
-                                <span id="bio-desc">I currently work as a fullstack web developer in the consulting field, creating web applications for a variety of clients and organizations. I spend most of my time working in the .NET space but I've always enjoyed creating applications in Java, Ruby, or whatever language that crosses my path</span>
-                            </p>
-                            <hr class="pb-1">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="d-flex social-icon-container justify-content-center">
-                                <a href='https://linkedin.com/in/shehanr'><img src="icons/linkedin.svg" class="icon"></a>
-                                <a href='https://github.com/shehanr'><img src="icons/github.svg" class="icon"></a>
-                                <a href='"mailto:shehanxrajapakse@gmail.com' target='_top'><img src="icons/gmail.svg" class="icon"></a>
+        <div class="">
+            <canvas id="stars" class="bg-iris"></canvas>        
+            <div class="container-fluid" id="main">
+                <div class="row h-100">
+                    <div class="col-8 my-auto">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1 id="name-plate" class="pb-2">Shehan Rajapakse</p>
                             </div>
-                        </div> 
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 class="pb-1"><span id="bio" class="bg-iris">Software Engineer</span></h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="pb-1">
+                                    <span id="bio-desc" class="bg-iris">I currently work as a full-stack software engineer in the consulting field, creating web apps for a variety of clients and organizations. I spend most of my time working in the .NET space but I've always enjoyed creating applications in Java, Ruby, or whatever language that crosses my path</span>
+                                </p>
+                                <hr class="pb-1">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="d-flex social-icon-container justify-content-center">
+                                    <a href="https://linkedin.com/in/shehanr" target="_blank"><img src="icons/linkedin.svg" class="icon" alt="LinkedIn Icon"></a>
+                                    <a href="https://github.com/shehanr" target="_blank"><img src="icons/github.svg" class="icon" alt="Github Icon"></a>
+                                    <a href="mailto:shehanxrajapakse@gmail.com" target='_top'><img src="icons/gmail.svg" class="icon" alt="Gmail Icon"></a>
+                                </div>
+                            </div> 
+                        </div>
                     </div>
+                    <div class="col-4 my-auto">
+                        <img src="images/prof_pic.png" id="profile-picture" title="Profile Picture / Photo Credit: Becca Schwartz" alt="alt=Shehan's profile picture"/>
+                    </div>    
                 </div>
-                <div class="col-4 my-auto">
-                    <img src="images/prof_pic.png" id="profile-picture"/>
-                </div>    
             </div>
         </div>
     </body>

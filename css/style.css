@@ -19,7 +19,6 @@ body{
 }
 
 #stars{
-    background-color: var(--iris);
     position:absolute;
     left:0;
     top:0;
@@ -37,7 +36,8 @@ body{
 }
 
 #profile-picture{
-    width: 85%;
+    height: 345px;
+    width: 325px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -46,12 +46,16 @@ body{
 #bio,
 #bio-desc{
     display: inline-block;
-    background-color: var(--iris);
     padding: .5rem;
+}
+
+.bg-iris{
+    background-color: var(--iris);
 }
 
 .icon{
     height: 2.5rem;
+    width: 2.5rem;
     filter:  brightness(0) invert(1);
 }
 
