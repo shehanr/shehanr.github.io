@@ -1,15 +1,17 @@
 //Get context and screen size;
 let canvas = document.querySelector("#stars");
 var ctx = canvas.getContext("2d");
-var W = window.innerWidth;
-var H = window.innerHeight;
+var W, H, sizeMultiplier;
+const avgScreenSize = 1920 * 1080;
 
 setSize(canvas, ctx, W, H);
 
 //Glow effect;
 ctx.shadowBlur = 10;
 ctx.shadowColor = "#ddd";
-var animateSpeed = 2;
+
+
+var animateSpeed = 4 * sizeMultiplier;
 function animate() {
     // Random position and size
     let x = W * Math.random();
@@ -30,8 +32,9 @@ animate();
 
 
 function setSize(){
-    W = window.innerWidth;
-    H = window.innerHeight;
+    W = $(document).width();
+    H = $(document).height();
+    sizeMultiplier =  1 / (W * H / avgScreenSize);
 
     canvas.width = W;
     canvas.height = H;
@@ -42,5 +45,5 @@ function setSize(){
 $(window).resize(function(){
     setSize();
     // when resizing, we can speed up the show
-    animateSpeed = 1.5;
+    animateSpeed = 2 * sizeMultiplier;
 });
