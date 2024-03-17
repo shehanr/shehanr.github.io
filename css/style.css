@@ -30,6 +30,14 @@ body{
     margin: 0;
 }
 
+#name-plate-mobile{
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 4rem;
+    padding-bottom: 2rem;
+    margin: 0;
+    text-align: center;
+}
+
 #main{
     padding: 0 10rem;
     height: 100%;
@@ -74,12 +82,12 @@ body{
     }
 
     #main{
-        padding: 2rem;
+        padding: 3rem 2rem;
         height: unset;
     }
 }
 
-@media (max-width: 577) {
+@media (max-width: 577px) {
     #profile-picture{
         height: 310px;
         width: 292px;
